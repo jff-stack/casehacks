@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>[case]HACKS 2027 · Sponsor CaseHacks</title>
-<meta name="description" content="Your problem. Our weekend. 400+ business and tech students, 24 hours, one real problem from your team. March 2027 at Wilfrid Laurier University. Sponsor packages from $1,000 to $4,000.">
+<meta name="description" content="Your problem. Our weekend. 400+ business and tech students, 22 hours, one real problem from your team. March 2027 at Wilfrid Laurier University. Sponsor packages from $1,000 to $4,000.">
 <meta property="og:title" content="[case]HACKS 2027 · Sponsor CaseHacks">
-<meta property="og:description" content="400+ business and tech students get 24 hours and one real problem from your team.">
+<meta property="og:description" content="400+ business and tech students get 22 hours and one real problem from your team.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Albert+Sans:wght@400;500;700&family=Pixelify+Sans:wght@500;700&display=swap">
@@ -339,6 +339,30 @@ html.menu-open .topbar{background:var(--white);border-bottom-color:var(--rule)}
 @media(max-width:860px){.contact-box{grid-template-columns:1fr}}
 footer{padding:32px 0 48px;background:var(--paper);font-size:.9375rem;color:var(--ink-2)}
 footer .wrap{border-top:1px solid var(--rule);padding-top:24px}
+footer .foot-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px}
+/* site credit: accent pill, underline slides in on hover */
+.credit{display:inline-block;line-height:1.4;padding:11px 18px;border-radius:999px;background-color:var(--accent);color:#fff;font-family:var(--head);font-weight:600;font-size:1.0625rem;text-decoration:none;background-image:linear-gradient(#fff,#fff);background-repeat:no-repeat;background-position:18px calc(100% - 9px);background-size:0 1.5px;transition:background-size .45s var(--ease),background-color .3s}
+.credit:hover,.credit:focus-visible{background-size:calc(100% - 36px) 1.5px;background-color:var(--accent-2)}
+.credit b{font-weight:800}
+@media(max-width:420px){.credit{font-size:.9375rem;padding:10px 16px;background-position:16px calc(100% - 8px)}.credit:hover,.credit:focus-visible{background-size:calc(100% - 32px) 1.5px}}
+/* contact rows with copy buttons */
+.contact ul.contacts{gap:0}
+.contacts li{padding:14px 0;border-top:1px solid var(--rule)}
+.contacts li:first-child{border-top:0;padding-top:0}
+.c-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.copy{min-height:44px;min-width:84px;padding:0 14px;border-radius:10px;border:1px solid var(--rule);background:var(--white);font-family:var(--head);font-weight:700;font-size:.875rem;color:var(--ink);transition:background-color .3s,border-color .3s,color .3s}
+.copy:hover{border-color:var(--accent)}
+.copy.done{background:var(--accent);border-color:var(--accent);color:#fff}
+/* sponsor slots: dashed placeholder, filled by ?sponsor= */
+.spslot{margin-top:14px;padding:12px 14px;border:1.5px dashed #9DB4CF;border-radius:12px;background:var(--box);font-size:.9375rem;line-height:1.4;color:var(--ink-2)}
+.spslot .spslot-main{display:block;font-family:var(--head);font-weight:700;color:var(--ink)}
+.spslot .spslot-main em{font-style:normal;font-weight:600}
+.spslot .spslot-k{display:block;margin-top:4px;font-size:.75rem;letter-spacing:.02em;color:var(--ink-2)}
+.spslot.filled{border-color:var(--accent);background:#EAF1FA}
+.stop .spslot{padding:8px 10px;font-size:.8125rem}
+.pub-badge{align-self:flex-start;display:inline-flex;margin:-6px 0 14px;padding:4px 10px;border-radius:999px;background:#E3F1E4;color:var(--green-dk);font-family:var(--head);font-weight:700;font-size:.8125rem}
+.pub-line{font-size:1rem;margin:0 0 18px}
+.sched-note{margin-top:28px}
 
 /* split lines */
 .line-mask{overflow:clip}
@@ -456,7 +480,7 @@ footer .wrap{border-top:1px solid var(--rule);padding-top:24px}
 @media(max-width:520px){.bcards{grid-template-columns:1fr!important}.bcard{min-height:0}}
 
 /* workshops and panels */
-.ws{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ws{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
 .wcard,.pcard{border:1px solid var(--rule);border-radius:18px;background:var(--white);padding:28px;display:flex;flex-direction:column}
 .w-top{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
 .w-n{font-family:var(--head);font-weight:700;font-size:.9375rem;color:var(--accent)}
@@ -802,7 +826,7 @@ a{color:var(--accent)}
 .stop h3{font-size:1rem}
 @media(max-width:900px){.stops{grid-template-columns:1fr}}
 
-/* what teams get at 11:00 AM */
+/* what teams get at the Friday 6:00 PM reveal */
 .brief-wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(48px,7vw,112px);align-items:start}
 .page{position:relative;background:#fff;border-radius:6px;padding:clamp(28px,3.4vw,48px) clamp(28px,3.6vw,52px);box-shadow:0 1px 2px rgba(29,29,31,.06),0 24px 48px -28px rgba(29,29,31,.35);border:1px solid #E8EDF3;font-family:Georgia,"Times New Roman",serif;color:#24272B}
 .stamp{position:absolute;top:18px;right:18px;font-family:var(--head);font-weight:800;font-size:.6875rem;letter-spacing:.04em;color:#B23A3A;border:2px solid #B23A3A;border-radius:4px;padding:3px 7px;transform:rotate(3deg);opacity:.85}
@@ -896,9 +920,9 @@ a{color:var(--accent)}
 <section class="hero" id="top" aria-labelledby="hero-h">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow" data-reveal>[case]HACKS 2027 · March · Wilfrid Laurier University</p>
+      <p class="eyebrow" id="eyebrow" data-reveal>[case]HACKS 2027 · March · Wilfrid Laurier University</p>
       <h1 id="hero-h" data-split>Your problem. Our weekend.</h1>
-      <p class="lede" data-reveal>400+ business and tech students get 24 hours and one real problem from your team. Something like
+      <p class="lede" data-reveal>400+ business and tech students get 22 hours and one real problem from your team. Something like
         <span class="rot" id="rot"><em class="on">why do new grads switch banks in their first year?</em><em aria-hidden="true">how could a small business spot invoice fraud before paying?</em><em aria-hidden="true">what would make someone open an investing account at 19?</em></span>
         Every team builds a fix and makes the business case for it.</p>
       <p class="proof-line" data-reveal>Last May: 400 applications, 250 students, one bank's case. This March: 400+ students.</p>
@@ -927,7 +951,7 @@ a{color:var(--accent)}
       <table class="cmp club-t">
         <thead><tr><th scope="col"><span class="sr">Question</span></th><th scope="col">Typical club sponsorship</th><th scope="col" class="ch">CaseHacks</th></tr></thead>
         <tbody>
-          <tr><th scope="row">What you pay for</th><td>A logo, a booth and a slot in the program</td><td class="ch">One brief, tested by our team, that 400+ students work on for 24 hours</td></tr>
+          <tr><th scope="row">What you pay for</th><td>A logo, a booth and a slot in the program</td><td class="ch">One brief, tested by our team, that 400+ students work on for 22 hours</td></tr>
           <tr><th scope="row">What students do</th><td>Build whatever they like, or present slides</td><td class="ch">Hand in 6 slides and a working prototype that answer your question</td></tr>
           <tr><th scope="row">How candidates are judged</th><td>Each judge uses their own sense of what's good</td><td class="ch">One 100-point rubric, the same sheet in every round</td></tr>
           <tr><th scope="row">What you can show your manager</th><td>Photos and a folder of resumes</td><td class="ch">Scores for every team on your track, a top-3 summary and a results report within one week</td></tr>
@@ -954,7 +978,7 @@ a{color:var(--accent)}
           <tbody>
             <tr><th scope="row">Who competes</th><td>Mostly computer science and engineering</td><td>Mostly business</td><td class="ch">Mixed teams: business, engineering, math, computer science and design</td></tr>
             <tr><th scope="row">What they hand in</th><td>A demo, often with no business model</td><td>A slide deck, nothing built</td><td class="ch">One package: 6 slides and a working prototype</td></tr>
-            <tr><th scope="row">How long</th><td>A weekend, often overnight</td><td>A few hours to a few days</td><td class="ch">24 hours, from case release to deadline</td></tr>
+            <tr><th scope="row">How long</th><td>A weekend, often overnight</td><td>A few hours to a few days</td><td class="ch">22 hours, from the Friday 6:00 PM case release to the Saturday 4:00 PM deadline</td></tr>
             <tr><th scope="row">How judging works</th><td>Judges look at the tech</td><td>Judges look at the strategy</td><td class="ch">One 100-point rubric for the problem, the build and the numbers</td></tr>
             <tr><th scope="row">What a sponsor gets back</th><td>Logo time and resumes</td><td>Ideas on paper</td><td class="ch">Prototypes and business cases for your problem, and people you watched work</td></tr>
           </tbody>
@@ -996,7 +1020,7 @@ a{color:var(--accent)}
       <div class="role"><h3>Designer</h3><p>Makes the product usable and the deck easy to follow.</p></div>
       <div class="role"><h3>Presenter</h3><p>Pitches the work and takes the judges' questions.</p></div>
     </div>
-    <p class="beginners" data-reveal>Beginners are welcome. Three workshops teach the basics before and during the build.</p>
+    <p class="beginners" data-reveal>Beginners are welcome. Workshop 1 runs Friday before the case reveal, and two drop-in workshops run on Saturday.</p>
 
     <div class="block">
       <div data-reveal><h3>What every team hands in</h3><p class="sub">One package. Judges score it, and sponsors get it after the event.</p></div>
@@ -1029,7 +1053,7 @@ a{color:var(--accent)}
 <section class="sec" id="case" aria-labelledby="case-h">
   <div class="wrap">
     <div class="sec-head">
-      <h2 id="case-h" data-split>What teams get at 11:00 AM</h2>
+      <h2 id="case-h" data-split>What teams get at 6:00 PM on Friday</h2>
       <p data-reveal>A two-page brief and a data pack. Here's a sample, so you can see the level of detail.</p>
     </div>
     <div class="brief-wrap" id="briefWrap">
@@ -1062,19 +1086,16 @@ a{color:var(--accent)}
 
     <div class="clock-block" id="clockBlock">
       <div class="clock-copy" data-reveal>
-        <h3>The 24-hour clock</h3>
-        <p class="sub">From the case reveal on Day 1 to the deadline on Day 2. Scroll to run the clock.</p>
+        <h3>The 22-hour clock</h3>
+        <p class="sub">From the case reveal on Friday at 6:00 PM to the deadline on Saturday at 4:00 PM. Saturday's two workshops are optional drop-ins. Scroll to run the clock.</p>
         <ol class="clock-legend">
-          <li><span class="m m-key"></span><b class="num">11:00 AM</b> Track reveal, clock starts</li>
-          <li><span class="m"></span><b class="num">12:00 PM</b> Lunch</li>
-          <li><span class="m"></span><b class="num">1:00 PM</b> Workshop 2</li>
-          <li><span class="m"></span><b class="num">2:30 PM</b> Panel 1</li>
-          <li><span class="m"></span><b class="num">4:00 PM</b> Recruiting tables</li>
-          <li><span class="m"></span><b class="num">6:00 PM</b> Dinner</li>
+          <li><span class="m m-key"></span><b class="num">Fri 6:00 PM</b> Case reveal, clock starts</li>
+          <li><span class="m"></span><b class="num">7:00 PM</b> Dinner</li>
           <li><span class="m m-night"></span><b>Overnight</b> Building, room stays open</li>
-          <li><span class="m"></span><b class="num">8:00 AM</b> Breakfast</li>
-          <li><span class="m"></span><b class="num">9:00 AM</b> Workshop 3</li>
-          <li><span class="m m-key"></span><b class="num">11:00 AM</b> Deadline</li>
+          <li><span class="m"></span><b class="num">Sat 8:00 AM</b> Breakfast</li>
+          <li><span class="m"></span><b class="num">10:00 AM</b> Workshop 2, drop-in</li>
+          <li><span class="m"></span><b class="num">1:00 PM</b> Workshop 3, drop-in</li>
+          <li><span class="m m-key"></span><b class="num">4:00 PM</b> Deadline</li>
         </ol>
       </div>
       <div class="clock" aria-hidden="true">
@@ -1084,7 +1105,7 @@ a{color:var(--accent)}
           <circle cx="180" cy="180" r="150" class="ring-fill" id="ringFill"/>
           <g id="ringMarks"></g>
         </svg>
-        <div class="clock-mid"><b class="num" id="clockHour">24h</b><span class="num" id="clockTime">Day 2 · 11:00 AM</span></div>
+        <div class="clock-mid"><b class="num" id="clockHour">22h</b><span class="num" id="clockTime">Sat · 4:00 PM</span></div>
       </div>
     </div>
   </div>
@@ -1136,7 +1157,7 @@ a{color:var(--accent)}
   <div class="wrap">
     <div class="sec-head">
       <h2 id="model-h" data-split>One case. Up to three sponsors.</h2>
-      <p data-reveal>Every team solves one shared case world, released on Day 1 at 11:00 AM. Inside it, each Platinum sponsor owns one track: its own question, data, stakeholder and judges. Gold sponsors set a named prize. Silver sponsors don't touch the case.</p>
+      <p data-reveal>Every team solves one shared case world, released on Friday at 6:00 PM. Inside it, each Platinum sponsor owns one track: its own question, data, stakeholder and judges. Gold sponsors set a named prize. Silver sponsors don't touch the case.</p>
     </div>
 
     <div class="seg-row" data-reveal>
@@ -1151,7 +1172,7 @@ a{color:var(--accent)}
     <div class="diagram" id="diagram">
       <div class="model-case">
         <span class="mc-k">One shared case world</span>
-        <b id="mcTitle">Released to every team, Day 1 at 11:00 AM</b>
+        <b id="mcTitle">Released to every team, Friday at 6:00 PM</b>
       </div>
       <svg class="branches" id="branches" viewBox="0 0 1200 150" aria-hidden="true">
         <path class="br" id="br0"/><path class="br" id="br1"/><path class="br" id="br2"/><path class="br" id="br3"/>
@@ -1220,7 +1241,7 @@ a{color:var(--accent)}
           <span class="t-dot" aria-hidden="true">4</span>
           <h3><span class="sr">Step 4: </span>We test-solve it</h3>
           <span class="t-pill">Your time: 20 min</span>
-          <p>Four of our team (one per role) solve your case on the full 24-hour clock. We send you a short note on what we changed.</p>
+          <p>Four of our team (one per role) solve your case on the full 22-hour clock. We send you a short note on what we changed.</p>
         </div>
       </div>
     </div>
@@ -1233,31 +1254,40 @@ a{color:var(--accent)}
   <div class="wrap">
     <div class="sec-head">
       <h2 id="prog-h" data-split>Workshops &amp; panels</h2>
-      <p data-reveal>Three workshops teach the skills the rubric scores. Two panels put working people in front of students. Each workshop runs 60 minutes: 40 minutes of teaching, 20 minutes hands-on.</p>
+      <p data-reveal>Friday afternoon has Workshop 1 and a sponsor-hosted workshop, both 60 minutes, before the case reveal. Workshops 2 and 3 are 45-minute drop-ins on Saturday. Two panels put working people in front of students.</p>
     </div>
     <div class="ws">
       <article class="wcard" data-reveal>
-        <div class="w-top"><span class="w-n">Workshop 1</span><span class="num w-when">Day 1 · 10:00 AM · 60 min</span></div>
+        <div class="w-top"><span class="w-n">Workshop 1</span><span class="num w-when">Friday · 1:00 PM · 60 min</span></div>
         <h3>Scope a business case</h3>
         <ol class="agenda"><li><b class="num">0–15 min</b> How judges read a problem: who hurts, how much, and why now</li><li><b class="num">15–40 min</b> Stakeholder map and back-of-envelope sizing, worked through a real example</li><li><b class="num">40–60 min</b> Hands-on: teams draft their own problem statement and get live feedback</li></ol><dl>
-          <dt>Led by</dt><dd>CaseHacks, or a Gold or Platinum sponsor</dd>
+          <dt>Led by</dt><dd>CaseHacks</dd>
           <dt>Students</dt><dd>Size a problem, map the stakeholders and work out basic unit economics.</dd>
           <dt>They leave with</dt><dd>A one-page problem statement template</dd>
         <dt>Best for</dt><dd>Teams that have not picked an angle yet</dd></dl>
       </article>
       <article class="wcard" data-reveal>
-        <div class="w-top"><span class="w-n">Workshop 2</span><span class="num w-when">Day 1 · 1:00 PM · 60 min</span></div>
+        <div class="w-top"><span class="w-n">Sponsor workshop</span><span class="num w-when">Friday · 2:15 PM · 60 min</span></div>
+        <h3>Your team, your topic</h3>
+        <p class="pfmt">Hosted by a Platinum or Gold sponsor. You teach something your team does every day, and students see how you work before they apply. We help build the content and handle the room.</p>
+        <div class="spslot" data-slot="workshop" data-size="full"><span class="spslot-main">Your company here</span><span class="spslot-k">Hosted by a Platinum or Gold sponsor</span></div>
+        <dl style="margin-top:22px">
+          <dt>Led by</dt><dd>A Platinum or Gold sponsor</dd>
+          <dt>Best for</dt><dd>Sponsors who want competitors to meet their team early</dd></dl>
+      </article>
+      <article class="wcard" data-reveal>
+        <div class="w-top"><span class="w-n">Workshop 2</span><span class="num w-when">Saturday · 10:00 AM · drop-in, 45 min</span></div>
         <h3>Build and demo fast</h3>
-        <ol class="agenda"><li><b class="num">0–15 min</b> Choosing the smallest build that proves your idea</li><li><b class="num">15–40 min</b> Live walkthrough: no-code tools, clickable prototypes and responsible AI use</li><li><b class="num">40–60 min</b> Hands-on: build one screen and script a 60-second demo around it</li></ol><dl>
+        <ol class="agenda"><li><b class="num">0–10 min</b> Choosing the smallest build that proves your idea</li><li><b class="num">10–30 min</b> Live walkthrough: no-code tools, clickable prototypes and responsible AI use</li><li><b class="num">30–45 min</b> Hands-on: build one screen and script a 60-second demo around it</li></ol><dl>
           <dt>Led by</dt><dd>CaseHacks, or a Gold or Platinum sponsor</dd>
           <dt>Students</dt><dd>Use no-code and low-code tools, make clickable prototypes, use AI tools responsibly and write a 60-second demo script.</dd>
           <dt>They leave with</dt><dd>A prototype starter kit</dd>
         <dt>Best for</dt><dd>Non-technical members and first-time hackers</dd></dl>
       </article>
       <article class="wcard" data-reveal>
-        <div class="w-top"><span class="w-n">Workshop 3</span><span class="num w-when">Day 2 · 9:00 AM · 60 min</span></div>
+        <div class="w-top"><span class="w-n">Workshop 3</span><span class="num w-when">Saturday · 1:00 PM · drop-in, 45 min</span></div>
         <h3>Pitch to a decision-maker</h3>
-        <ol class="agenda"><li><b class="num">0–15 min</b> The 6-slide structure and what each slide must prove</li><li><b class="num">15–40 min</b> Writing the Ask: a number, a timeline and a next step</li><li><b class="num">40–60 min</b> Hands-on: mock judge Q&amp;A with a sponsor mentor</li></ol><dl>
+        <ol class="agenda"><li><b class="num">0–10 min</b> The 6-slide structure and what each slide must prove</li><li><b class="num">10–30 min</b> Writing the Ask: a number, a timeline and a next step</li><li><b class="num">30–45 min</b> Hands-on: mock judge Q&amp;A with a sponsor mentor</li></ol><dl>
           <dt>Led by</dt><dd>CaseHacks, or a Gold or Platinum sponsor</dd>
           <dt>Students</dt><dd>Learn the 6-slide structure, write the Ask, and practise handling judge questions.</dd>
           <dt>They leave with</dt><dd>A pitch checklist</dd>
@@ -1265,21 +1295,24 @@ a{color:var(--accent)}
       </article>
     </div>
     <div class="prog-photos" data-reveal><figure class="photo"><img src="./assets/2026-workshop.png" alt="A CaseHacks 2026 volunteer holding a one-minute warning sign" onload="this.parentNode.classList.add('loaded')" onerror="this.remove()"></figure><figure class="photo"><img src="./assets/2026-panel.png" alt="CaseHacks 2026 organizers and attendees" onload="this.parentNode.classList.add('loaded')" onerror="this.remove()"></figure><figure class="photo"><img src="./assets/2026-judges.png" alt="Three CaseHacks 2026 attendees on stage" onload="this.parentNode.classList.add('loaded')" onerror="this.remove()"></figure></div>
-    <p class="host-line" data-reveal>Gold and Platinum sponsors can host a workshop. We help build the content and handle the room.</p>
+    <p class="host-line" data-reveal>Gold and Platinum sponsors can host the Friday 2:15 PM workshop. We help build the content and handle the room.</p>
 
     <div class="panels">
       <article class="pcard" data-reveal>
-        <div class="w-top"><span class="w-n">Panel 1</span><span class="num w-when">Day 1 · 2:30 PM</span></div>
+        <div class="w-top"><span class="w-n">Panel 1 · Industry panel</span><span class="num w-when">Friday · 3:30 PM</span></div>
         <h3>Building inside big companies</h3>
+        <span class="pub-badge">Open to the public · free registration</span>
+        <p class="pub-line">Students, faculty and the local tech community can attend, so your panelists speak to a bigger room than the competitors alone.</p>
         <p class="pfmt">45 minutes plus 15 minutes of Q&amp;A. Three panelists and a student moderator. Panelists give a short opening take, answer prepared questions, then open the floor to students.</p>
         <div class="chips" role="radiogroup" aria-label="Panel 1 topic">
           <button type="button" class="chip" role="radio" aria-checked="true">Shipping AI products in a regulated industry</button>
           <button type="button" class="chip" role="radio" aria-checked="false">From idea to pilot: how a bank decides what to build</button>
           <button type="button" class="chip" role="radio" aria-checked="false">What product, data and risk teams argue about</button>
         </div>
+        <div class="spslot" data-slot="panel" data-size="full"><span class="spslot-main">Your company here</span><span class="spslot-k">Panel seats go to Gold and Platinum sponsors</span></div>
       </article>
       <article class="pcard" data-reveal>
-        <div class="w-top"><span class="w-n">Panel 2</span><span class="num w-when">Day 2 · 1:30 PM</span></div>
+        <div class="w-top"><span class="w-n">Panel 2 · Careers panel</span><span class="num w-when">Saturday · 5:30 PM</span></div>
         <h3>Careers and the next five years</h3>
         <p class="pfmt">45 minutes plus 15 minutes of Q&amp;A. Three panelists and a student moderator. Panelists give a short opening take, answer prepared questions, then open the floor to students.</p>
         <div class="chips" role="radiogroup" aria-label="Panel 2 topic">
@@ -1305,10 +1338,12 @@ a{color:var(--accent)}
         <img src="./assets/2026-sponsor-table.png" alt="Students talking with a sponsor at CaseHacks 2026" onload="this.parentNode.classList.add('loaded')" onerror="this.remove()">
       </figure>
       <div class="room">
-        <article data-reveal><span class="when">Day 1, 11:00 AM</span><h3>Track reveal</h3><p>Someone from your team reads your problem to the room. The clock starts, and teams pick their track.</p><div class="tags"><span class="tag plat">Platinum</span></div></article>
-        <article data-reveal><span class="when">Both days</span><h3>Recruiting table and office hours</h3><p>Teams come to you with questions about your case. You talk to students while they work, which tells you more than a booth chat.</p><div class="tags"><span class="tag all">All tiers</span></div></article>
-        <article data-reveal><span class="when">Day 2, 11:30 AM to 3:00 PM</span><h3>Judging and finals</h3><p>Two judging rounds inside each track, then the finals on one stage. Your judges score with our rubric.</p><div class="tags"><span class="tag gold">Gold</span><span class="tag plat">Platinum</span></div></article>
-        <article data-reveal><span class="when">Day 2, 4:30 PM</span><h3>Awards and networking</h3><p>You hand your prize to the winners, then meet the finalists before everyone leaves.</p><div class="tags"><span class="tag all">All tiers</span></div></article>
+        <article data-reveal><span class="when">Friday, 2:15 PM</span><h3>Sponsor workshop</h3><p>Your team runs a 60-minute workshop for competitors before the case is out, so students meet you before they start building.</p><div class="tags"><span class="tag gold">Gold</span><span class="tag plat">Platinum</span></div></article>
+        <article data-reveal><span class="when">Friday, 3:30 PM</span><h3>Public industry panel</h3><p>Your speakers sit on a panel that is open to the public, in front of students, faculty and the local tech community.</p><div class="tags"><span class="tag gold">Gold</span><span class="tag plat">Platinum</span></div></article>
+        <article data-reveal><span class="when">Friday from 4:45 PM, and Saturday</span><h3>Recruiting tables and coffee chats</h3><p>Teams come to you with questions about your case. You talk to students while they work, which tells you more than a booth chat.</p><div class="tags"><span class="tag all">All tiers</span></div></article>
+        <article data-reveal><span class="when">Friday, 6:00 PM</span><h3>Case reveal</h3><p>Someone from your team reads your problem to the room. The clock starts, and teams pick their track.</p><div class="tags"><span class="tag plat">Platinum</span></div></article>
+        <article data-reveal><span class="when">Saturday, 4:15 PM to 7:00 PM</span><h3>Judging and finals</h3><p>Two judging rounds inside each track, then the finals on one stage at 6:00 PM. Your judges score with our rubric.</p><div class="tags"><span class="tag gold">Gold</span><span class="tag plat">Platinum</span></div></article>
+        <article data-reveal><span class="when">Saturday, 7:00 PM</span><h3>Awards and networking</h3><p>You hand your prize to the winners, then meet the finalists before everyone leaves.</p><div class="tags"><span class="tag all">All tiers</span></div></article>
       </div>
     </div>
   </div>
@@ -1327,7 +1362,7 @@ a{color:var(--accent)}
           <img src="./assets/2026-case-reveal.png" alt="The case reveal at CaseHacks 2026" onload="this.parentNode.classList.add('loaded')" onerror="this.remove()">
         </figure>
         <h3>We test your case first.</h3>
-        <p>Two weeks out, four of our team solve your case on the full 24-hour clock. If it's too vague or too easy, we fix it with you before any student sees it.</p>
+        <p>Two weeks out, four of our team solve your case on the full 22-hour clock. If it's too vague or too easy, we fix it with you before any student sees it.</p>
         <div class="box">Tested by 4 people, one per team role, two weeks before the event.</div>
       </article>
       <article class="perk" data-reveal>
@@ -1425,7 +1460,7 @@ a{color:var(--accent)}
         <div class="row1"><h3>Platinum</h3><span class="badge"><span class="num">3</span> available</span></div>
         <div class="price">$4,000<small>CAD</small></div>
         <p class="tagline">Own a problem.</p>
-        <p class="who">For teams with a real problem they want 24 hours of work on.</p>
+        <p class="who">For teams with a real problem they want 22 hours of work on.</p>
         <ul>
           <li class="inc">Everything in Gold, plus</li>
           <li>Own a track and set the case with us</li>
@@ -1462,6 +1497,7 @@ a{color:var(--accent)}
           <tr><th scope="row">Opening ceremony stage time</th><td>Thanked</td><td>1 min</td><td class="pcol">3 min and the track reveal</td></tr>
           <tr><th scope="row">Host a workshop</th><td class="n" aria-label="Not included">·</td><td>1</td><td class="pcol">1, first choice of slot</td></tr>
           <tr><th scope="row">Panel seat</th><td class="n" aria-label="Not included">·</td><td class="y">◆</td><td class="y pcol">◆</td></tr>
+          <tr><th scope="row">Panel seat at the public panel</th><td class="n" aria-label="Not included">·</td><td class="y">◆</td><td class="y pcol">◆</td></tr>
           <tr class="grp-row"><th colspan="4" scope="colgroup">Exposure</th></tr>
           <tr><th scope="row">Logo on the site and event materials</th><td>Small</td><td>Medium</td><td class="pcol">Large</td></tr>
           <tr><th scope="row">Plot on the event map</th><td class="n" aria-label="Not included">·</td><td class="y">◆</td><td class="y pcol">◆</td></tr>
@@ -1524,7 +1560,7 @@ a{color:var(--accent)}
   <div class="wrap">
     <div class="sec-head">
       <h2 id="after-h" data-split>After the event</h2>
-      <p data-reveal>The event ends on Day 2. Your results don't. Here is what reaches you and when.</p>
+      <p data-reveal>The event ends on Saturday night. Your results don't. Here is what reaches you and when.</p>
     </div>
     <div class="after-grid">
       <ol class="atl">
@@ -1553,73 +1589,72 @@ a{color:var(--accent)}
   <div class="wrap">
     <div class="sec-head">
       <h2 id="sch-h" data-split>Two days, hour by hour</h2>
-      <p data-reveal>March 2027 · Exact dates TBC. Every sponsor moment is tagged with the package that gets it.</p>
+      <p data-reveal>March 2027 · Exact dates TBC. Friday is sponsor day, Saturday is build and judging. Every sponsor moment is tagged with the package that gets it.</p>
     </div>
     <div class="toggle" role="tablist" aria-label="Choose a day" data-reveal>
-      <button type="button" role="tab" id="tab1" aria-controls="day1" aria-selected="true">Day 1</button>
-      <button type="button" role="tab" id="tab2" aria-controls="day2" aria-selected="false" tabindex="-1">Day 2</button>
+      <button type="button" role="tab" id="tab1" aria-controls="day1" aria-selected="true">Friday</button>
+      <button type="button" role="tab" id="tab2" aria-controls="day2" aria-selected="false" tabindex="-1">Saturday</button>
     </div>
     <div class="rail" id="day1" role="tabpanel" aria-labelledby="tab1">
       <div class="rail-line" aria-hidden="true"><i></i></div>
-      <ol class="stops" style="--n:10">
-        <li class="stop"><span class="tm">9:00 AM</span><span class="pt"></span><div class="body"><h3>Doors and breakfast</h3></div></li>
-        <li class="stop"><span class="tm">9:30 AM</span><span class="pt"></span><div class="body"><h3>Opening ceremony</h3><span class="tag all">All</span></div></li>
-        <li class="stop"><span class="tm">10:00 AM</span><span class="pt"></span><div class="body"><h3>Workshop 1</h3><span class="tag gold">Gold · Platinum</span></div></li>
-        <li class="stop key"><span class="tm">11:00 AM</span><span class="pt"></span><div class="body"><h3>Track reveal, clock starts</h3><span class="tag plat">Platinum</span></div></li>
-        <li class="stop"><span class="tm">12:00 PM</span><span class="pt"></span><div class="body"><h3>Lunch</h3></div></li>
-        <li class="stop"><span class="tm">1:00 PM</span><span class="pt"></span><div class="body"><h3>Workshop 2</h3><span class="tag gold">Gold · Platinum</span></div></li>
-        <li class="stop"><span class="tm">2:30 PM</span><span class="pt"></span><div class="body"><h3>Panel 1</h3><span class="tag gold">Gold · Platinum</span></div></li>
-        <li class="stop"><span class="tm">4:00 PM</span><span class="pt"></span><div class="body"><h3>Recruiting tables and office hours</h3><span class="tag all">All</span></div></li>
-        <li class="stop"><span class="tm">6:00 PM</span><span class="pt"></span><div class="body"><h3>Dinner</h3></div></li>
-        <li class="stop night"><span class="tm">Overnight</span><span class="pt"></span><div class="body"><h3>Building, room stays open</h3></div></li>
+      <ol class="stops" style="--n:8">
+        <li class="stop"><span class="tm">12:00 PM</span><span class="pt"></span><div class="body"><h3>Check-in opens</h3></div></li>
+        <li class="stop"><span class="tm">1:00 PM</span><span class="pt"></span><div class="body"><h3>Workshop 1: Scope a business case</h3></div></li>
+        <li class="stop"><span class="tm">2:15 PM</span><span class="pt"></span><div class="body"><h3>Sponsor workshop</h3><span class="tag gold">Gold · Platinum</span><div class="spslot" data-slot="workshop" data-size="short"><span class="spslot-main">Your company here</span></div></div></li>
+        <li class="stop"><span class="tm">3:30 PM</span><span class="pt"></span><div class="body"><h3>Industry panel, open to the public</h3><span class="tag gold">Gold · Platinum</span><div class="spslot" data-slot="panel" data-size="short"><span class="spslot-main">Your company here</span></div></div></li>
+        <li class="stop"><span class="tm">4:45 PM</span><span class="pt"></span><div class="body"><h3>Recruiting tables and coffee chats</h3><span class="tag all">All</span></div></li>
+        <li class="stop"><span class="tm">5:30 PM</span><span class="pt"></span><div class="body"><h3>Opening ceremony</h3><span class="tag all">All</span></div></li>
+        <li class="stop key"><span class="tm">6:00 PM</span><span class="pt"></span><div class="body"><h3>Case reveal. The clock starts.</h3><span class="tag plat">Platinum</span></div></li>
+        <li class="stop night"><span class="tm">7:00 PM</span><span class="pt"></span><div class="body"><h3>Dinner, then overnight building</h3></div></li>
       </ol>
     </div>
     <div class="rail" id="day2" role="tabpanel" aria-labelledby="tab2" hidden>
       <div class="rail-line" aria-hidden="true"><i></i></div>
-      <ol class="stops" style="--n:8">
+      <ol class="stops" style="--n:9">
         <li class="stop"><span class="tm">8:00 AM</span><span class="pt"></span><div class="body"><h3>Breakfast</h3></div></li>
-        <li class="stop"><span class="tm">9:00 AM</span><span class="pt"></span><div class="body"><h3>Workshop 3</h3><span class="tag gold">Gold · Platinum</span></div></li>
-        <li class="stop key"><span class="tm">11:00 AM</span><span class="pt"></span><div class="body"><h3>Submission deadline</h3></div></li>
-        <li class="stop"><span class="tm">11:30 AM</span><span class="pt"></span><div class="body"><h3>Judging rounds 1 and 2</h3><span class="tag gold">Gold · Platinum</span></div></li>
-        <li class="stop"><span class="tm">1:30 PM</span><span class="pt"></span><div class="body"><h3>Panel 2</h3><span class="tag gold">Gold · Platinum</span></div></li>
-        <li class="stop key"><span class="tm">3:00 PM</span><span class="pt"></span><div class="body"><h3>Finals</h3><span class="tag plat">Platinum</span></div></li>
-        <li class="stop"><span class="tm">4:30 PM</span><span class="pt"></span><div class="body"><h3>Awards</h3><span class="tag gold">Gold · Platinum</span></div></li>
-        <li class="stop"><span class="tm">5:00 PM</span><span class="pt"></span><div class="body"><h3>Networking</h3><span class="tag all">All</span></div></li>
+        <li class="stop"><span class="tm">10:00 AM</span><span class="pt"></span><div class="body"><h3>Workshop 2: Build and demo fast (drop-in)</h3><span class="tag gold">Gold · Platinum</span></div></li>
+        <li class="stop"><span class="tm">1:00 PM</span><span class="pt"></span><div class="body"><h3>Workshop 3: Pitch to a decision-maker (drop-in)</h3><span class="tag gold">Gold · Platinum</span></div></li>
+        <li class="stop key"><span class="tm">4:00 PM</span><span class="pt"></span><div class="body"><h3>Submission deadline</h3></div></li>
+        <li class="stop"><span class="tm">4:15 PM</span><span class="pt"></span><div class="body"><h3>Judging rounds 1 and 2</h3><span class="tag gold">Gold · Platinum</span></div></li>
+        <li class="stop"><span class="tm">5:30 PM</span><span class="pt"></span><div class="body"><h3>Careers panel</h3><span class="tag gold">Gold · Platinum</span></div></li>
+        <li class="stop key"><span class="tm">6:00 PM</span><span class="pt"></span><div class="body"><h3>Finals on stage</h3><span class="tag plat">Platinum</span></div></li>
+        <li class="stop"><span class="tm">7:00 PM</span><span class="pt"></span><div class="body"><h3>Awards</h3><span class="tag gold">Gold · Platinum</span></div></li>
+        <li class="stop"><span class="tm">7:30 PM</span><span class="pt"></span><div class="body"><h3>Networking</h3><span class="tag all">All</span></div></li>
       </ol>
     </div>
 
     <div class="sched-tables" data-reveal>
       <table class="st">
-        <caption>Day 1</caption>
+        <caption>Friday · sponsor day</caption>
         <thead><tr><th scope="col">Time</th><th scope="col">Block</th><th scope="col">What happens</th><th scope="col">Sponsor role</th></tr></thead>
         <tbody>
-          <tr><td>9:00 AM</td><td>Doors and breakfast</td><td>Check-in on the hacker portal. Teams form.</td><td><span class="n" aria-label="None">·</span></td></tr>
-          <tr><td>9:30 AM</td><td>Opening ceremony</td><td>Welcome, rules, how judging works</td><td><span class="tag all">All</span></td></tr>
-          <tr><td>10:00 AM</td><td>Workshop 1</td><td>Scope a business case</td><td><span class="tag gold">Gold · Platinum</span> host</td></tr>
-          <tr><td>11:00 AM</td><td>Track reveal</td><td>Track owners read their problems. The 24-hour clock starts.</td><td><span class="tag plat">Platinum</span> reveal</td></tr>
-          <tr><td>12:00 PM</td><td>Lunch</td><td>Teams eat and plan</td><td><span class="n" aria-label="None">·</span></td></tr>
-          <tr><td>1:00 PM</td><td>Workshop 2</td><td>Build and demo fast</td><td><span class="tag gold">Gold · Platinum</span> host</td></tr>
-          <tr><td>2:30 PM</td><td>Panel 1</td><td>Building inside big companies</td><td><span class="tag gold">Gold · Platinum</span> speak</td></tr>
-          <tr><td>4:00 PM</td><td>Recruiting tables and office hours</td><td>Teams bring questions to sponsor tables</td><td><span class="tag all">All</span></td></tr>
-          <tr><td>6:00 PM</td><td>Dinner</td><td>A break from the build</td><td><span class="n" aria-label="None">·</span></td></tr>
-          <tr><td>Overnight</td><td>Building</td><td>The room stays open</td><td><span class="n" aria-label="None">·</span></td></tr>
+          <tr><td>12:00 PM</td><td>Check-in opens</td><td>Check-in on the hacker portal. Teams form.</td><td><span class="n" aria-label="None">·</span></td></tr>
+          <tr><td>1:00 PM</td><td>Workshop 1</td><td>Scope a business case, run by CaseHacks</td><td><span class="n" aria-label="None">·</span></td></tr>
+          <tr><td>2:15 PM</td><td>Sponsor workshop</td><td>60 minutes, hosted by a Platinum or Gold sponsor</td><td><span class="tag gold">Gold · Platinum</span> host</td></tr>
+          <tr><td>3:30 PM</td><td>Industry panel</td><td>Open to the public. 45 minutes plus 15 minutes of Q&amp;A</td><td><span class="tag gold">Gold · Platinum</span> speak</td></tr>
+          <tr><td>4:45 PM</td><td>Recruiting tables and coffee chats</td><td>Students and guests meet sponsor teams</td><td><span class="tag all">All</span></td></tr>
+          <tr><td>5:30 PM</td><td>Opening ceremony</td><td>Welcome, rules, how judging works</td><td><span class="tag all">All</span></td></tr>
+          <tr><td>6:00 PM</td><td>Case reveal</td><td>Track owners read their problems. The 22-hour clock starts.</td><td><span class="tag plat">Platinum</span> reveal</td></tr>
+          <tr><td>7:00 PM</td><td>Dinner, then overnight building</td><td>The room stays open</td><td><span class="n" aria-label="None">·</span></td></tr>
         </tbody>
       </table>
       <table class="st">
-        <caption>Day 2</caption>
+        <caption>Saturday · build and judging</caption>
         <thead><tr><th scope="col">Time</th><th scope="col">Block</th><th scope="col">What happens</th><th scope="col">Sponsor role</th></tr></thead>
         <tbody>
-          <tr><td>8:00 AM</td><td>Breakfast</td><td>Last build hours start</td><td><span class="n" aria-label="None">·</span></td></tr>
-          <tr><td>9:00 AM</td><td>Workshop 3</td><td>Pitch to a decision-maker</td><td><span class="tag gold">Gold · Platinum</span> host</td></tr>
-          <tr><td>11:00 AM</td><td>Submission deadline</td><td>One package per team</td><td><span class="n" aria-label="None">·</span></td></tr>
-          <tr><td>11:30 AM</td><td>Judging rounds 1 and 2</td><td>Every team pitches, then the top teams pitch again</td><td><span class="tag gold">Gold · Platinum</span> judge</td></tr>
-          <tr><td>1:30 PM</td><td>Panel 2</td><td>Careers panel while scores are counted</td><td><span class="tag gold">Gold · Platinum</span> speak</td></tr>
-          <tr><td>3:00 PM</td><td>Finals</td><td>Finalists pitch on the main stage</td><td><span class="tag plat">Platinum</span> judge</td></tr>
-          <tr><td>4:30 PM</td><td>Awards</td><td>Sponsors present their prizes</td><td><span class="tag gold">Gold · Platinum</span> present</td></tr>
-          <tr><td>5:00 PM</td><td>Networking</td><td>Meet finalists and students</td><td><span class="tag all">All</span></td></tr>
+          <tr><td>8:00 AM</td><td>Breakfast</td><td>The last build hours start</td><td><span class="n" aria-label="None">·</span></td></tr>
+          <tr><td>10:00 AM</td><td>Workshop 2</td><td>Build and demo fast. Drop-in, 45 minutes</td><td><span class="tag gold">Gold · Platinum</span> host</td></tr>
+          <tr><td>1:00 PM</td><td>Workshop 3</td><td>Pitch to a decision-maker. Drop-in, 45 minutes</td><td><span class="tag gold">Gold · Platinum</span> host</td></tr>
+          <tr><td>4:00 PM</td><td>Submission deadline</td><td>One package per team</td><td><span class="n" aria-label="None">·</span></td></tr>
+          <tr><td>4:15 PM</td><td>Judging rounds 1 and 2</td><td>Every team pitches, then the top teams pitch again</td><td><span class="tag gold">Gold · Platinum</span> judge</td></tr>
+          <tr><td>5:30 PM</td><td>Careers panel</td><td>While judges pick the finalists</td><td><span class="tag gold">Gold · Platinum</span> speak</td></tr>
+          <tr><td>6:00 PM</td><td>Finals</td><td>Finalists pitch on stage</td><td><span class="tag plat">Platinum</span> judge</td></tr>
+          <tr><td>7:00 PM</td><td>Awards</td><td>Sponsors present their prizes</td><td><span class="tag gold">Gold · Platinum</span> present</td></tr>
+          <tr><td>7:30 PM</td><td>Networking</td><td>Meet finalists and students</td><td><span class="tag all">All</span></td></tr>
         </tbody>
       </table>
     </div>
+    <p class="host-line sub sched-note" data-reveal>Friday sessions run during business hours, so your team can join on a workday.</p>
   </div>
 </section>
 
@@ -1711,12 +1746,12 @@ a{color:var(--accent)}
     <div class="contact-box" data-reveal>
       <div>
         <a class="btn btn-primary" href="mailto:corporate@casehacks.ca?subject=20-minute%20call%20about%20CaseHacks%202027">Book a 20-minute call</a>
-        <p class="sub" style="margin-top:16px">We reply within 24 hours.</p>
+        <p class="sub" style="margin-top:16px">We reply within one business day.</p>
       </div>
-      <ul>
-        <li><span>Sponsorship</span><a class="ulink" href="mailto:corporate@casehacks.ca">corporate@casehacks.ca</a></li>
-        <li><span>Co-presidents</span><a class="ulink" href="mailto:president@casehacks.ca">president@casehacks.ca</a></li>
-        <li><span>Website</span><a class="ulink" href="https://casehacks.ca">casehacks.ca</a></li>
+      <ul class="contacts">
+        <li><span>Sponsorships</span><div class="c-row"><a class="ulink" href="mailto:corporate@casehacks.ca">corporate@casehacks.ca</a><button type="button" class="copy" data-copy="corporate@casehacks.ca" aria-label="Copy corporate@casehacks.ca" aria-live="polite">Copy</button></div></li>
+        <li><span>Co-Presidents</span><div class="c-row"><a class="ulink" href="mailto:president@casehacks.ca">president@casehacks.ca</a><button type="button" class="copy" data-copy="president@casehacks.ca" aria-label="Copy president@casehacks.ca" aria-live="polite">Copy</button></div></li>
+        <li><span>Jason Francis, Co-President</span><div class="c-row"><a class="ulink" href="mailto:jf2franc@uwaterloo.ca">jf2franc@uwaterloo.ca</a><button type="button" class="copy" data-copy="jf2franc@uwaterloo.ca" aria-label="Copy jf2franc@uwaterloo.ca" aria-live="polite">Copy</button></div></li>
       </ul>
     </div>
   </div>
@@ -1725,7 +1760,7 @@ a{color:var(--accent)}
 </main>
 
 <footer>
-  <div class="wrap">Run by students at Laurier's Lazaridis School of Business · Formerly The GoldenHack · © 2027 [case]HACKS</div>
+  <div class="wrap foot-row"><span>Run by students at Laurier's Lazaridis School of Business · Formerly The GoldenHack · © 2027 [case]HACKS</span><a class="credit" href="https://jasonfrancis.dev" target="_blank" rel="noopener">Site by <b>Jason Francis</b> · jasonfrancis.dev</a></div>
 </footer>
 
 <!-- map drawer -->
@@ -1763,6 +1798,70 @@ a{color:var(--accent)}
   function motionOK() { return hasG && !reduce; }
   function $(s, r) { return (r || document).querySelector(s); }
   function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
+
+  /* sponsor personalization: ?sponsor=<key>. Add a key here for each new sponsor; unknown keys stay generic. */
+  var SPONSORS = {
+    scotiabank: {
+      name: "Scotiabank",
+      workshop: "Building products inside a regulated bank",
+      panel: "From idea to pilot: how a bank decides what to build"
+    }
+  };
+  (function () {
+    var key = (new URLSearchParams(location.search).get("sponsor") || "").trim().toLowerCase();
+    if (!Object.prototype.hasOwnProperty.call(SPONSORS, key)) return;
+    var sp = SPONSORS[key];
+    $("#eyebrow").textContent = "Prepared for " + sp.name;
+    var lines = {
+      workshop: ["Friday 2:15 PM · Workshop hosted by " + sp.name + ": ", sp.workshop, "Hosted by " + sp.name],
+      panel: ["Friday 3:30 PM · Panel featuring " + sp.name + " speakers: ", sp.panel, sp.name + " speakers"]
+    };
+    $$(".spslot").forEach(function (el) {
+      var l = lines[el.getAttribute("data-slot")];
+      if (!l) return;
+      var main = document.createElement("span"), k = document.createElement("span");
+      main.className = "spslot-main"; k.className = "spslot-k";
+      if (el.getAttribute("data-size") === "short") {
+        main.textContent = l[2];
+      } else {
+        var em = document.createElement("em");
+        em.textContent = l[1];
+        main.appendChild(document.createTextNode(l[0]));
+        main.appendChild(em);
+      }
+      k.textContent = "Example · not confirmed";
+      el.textContent = "";
+      el.appendChild(main); el.appendChild(k);
+      el.classList.add("filled");
+    });
+    /* pre-select the matching panel topic, if it is one of the proposed ones */
+    $$(".chip").forEach(function (c) {
+      if (c.textContent.trim() !== sp.panel) return;
+      $$(".chip", c.parentNode).forEach(function (o) { o.setAttribute("aria-checked", String(o === c)); });
+    });
+  })();
+
+  /* copy buttons on the contact emails */
+  $$(".copy").forEach(function (b) {
+    var timer;
+    function done() {
+      b.textContent = "Copied"; b.classList.add("done");
+      clearTimeout(timer);
+      timer = setTimeout(function () { b.textContent = "Copy"; b.classList.remove("done"); }, 1500);
+    }
+    function fallback(v) {
+      var ta = document.createElement("textarea");
+      ta.value = v; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
+      document.body.appendChild(ta); ta.select();
+      try { if (document.execCommand("copy")) done(); } catch (e) { /* leave the mailto link as the way out */ }
+      document.body.removeChild(ta);
+    }
+    b.addEventListener("click", function () {
+      var v = b.getAttribute("data-copy");
+      if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(v).then(done, function () { fallback(v); });
+      else fallback(v);
+    });
+  });
 
   /* hash: skip in sandboxed previews where history writes are blocked */
   var canWriteHash = /^https?:$/.test(location.protocol) || location.protocol === "file:";
@@ -1880,8 +1979,8 @@ a{color:var(--accent)}
 
   /* map drawer */
   var drawer = $("#drawer"), dBody = $("#dBody"), lastTrigger = null, hint = $("#mapHint");
-  var D1 = [["9:00 AM", "Doors and breakfast"], ["9:30 AM", "Opening ceremony"], ["10:00 AM", "Workshop 1"], ["11:00 AM", "Track reveal, clock starts"], ["12:00 PM", "Lunch"], ["1:00 PM", "Workshop 2"], ["2:30 PM", "Panel 1"], ["4:00 PM", "Recruiting tables and office hours"], ["6:00 PM", "Dinner"], ["Overnight", "Building, room stays open"]];
-  var D2 = [["8:00 AM", "Breakfast"], ["9:00 AM", "Workshop 3"], ["11:00 AM", "Submission deadline"], ["11:30 AM", "Judging rounds 1 and 2"], ["1:30 PM", "Panel 2"], ["3:00 PM", "Finals"], ["4:30 PM", "Awards"], ["5:00 PM", "Networking"]];
+  var D1 = [["12:00 PM", "Check-in opens"], ["1:00 PM", "Workshop 1: Scope a business case"], ["2:15 PM", "Sponsor workshop"], ["3:30 PM", "Industry panel, open to the public"], ["4:45 PM", "Recruiting tables and coffee chats"], ["5:30 PM", "Opening ceremony"], ["6:00 PM", "Case reveal. The clock starts."], ["7:00 PM", "Dinner, then overnight building"]];
+  var D2 = [["8:00 AM", "Breakfast"], ["10:00 AM", "Workshop 2 (drop-in)"], ["1:00 PM", "Workshop 3 (drop-in)"], ["4:00 PM", "Submission deadline"], ["4:15 PM", "Judging rounds 1 and 2"], ["5:30 PM", "Careers panel"], ["6:00 PM", "Finals on stage"], ["7:00 PM", "Awards"], ["7:30 PM", "Networking"]];
   function list(rows) { return '<ul class="d-list">' + rows.map(function (r) { return "<li><b>" + r[0] + "</b><span>" + r[1] + "</span></li>"; }).join("") + "</ul>"; }
   var plotText = {
     Platinum: "Students who walk in see your brief, your open roles and a link to book your office hours.",
@@ -1889,14 +1988,14 @@ a{color:var(--accent)}
     Silver: "Your logo on the town board, with a link to your site."
   };
   var CONTENT = {
-    schedule: function () { return ["Town board", "The schedule", '<p class="d-sub">Day 1</p>' + list(D1) + '<p class="d-sub">Day 2</p>' + list(D2) + '<a class="pixbtn" href="#schedule">See the full schedule</a>']; },
+    schedule: function () { return ["Town board", "The schedule", '<p class="d-sub">Friday · sponsor day</p>' + list(D1) + '<p class="d-sub">Saturday · build and judging</p>' + list(D2) + '<a class="pixbtn" href="#schedule">See the full schedule</a>']; },
     judging: function () {
       return ["Judging path", "How judging works",
-        '<ol class="d-flow"><li><b>Rounds 1 and 2</b> · Day 2, 11:30 AM. Teams pitch against their own track.</li><li><b>4 finalists</b>. The top team from each track, plus wildcards.</li><li><b>Finals</b> · Day 2, 3:00 PM. All finalists on one stage.</li><li><b>Prizes</b>. Each Platinum sponsor gives its track prize. A mixed panel picks the grand prize.</li></ol>' +
+        '<ol class="d-flow"><li><b>Rounds 1 and 2</b> · Saturday, 4:15 PM. Teams pitch against their own track.</li><li><b>4 finalists</b>. The top team from each track, plus wildcards.</li><li><b>Finals</b> · Saturday, 6:00 PM. All finalists on one stage.</li><li><b>Prizes</b>. Each Platinum sponsor gives its track prize. A mixed panel picks the grand prize.</li></ol>' +
         '<p class="d-sub">The rubric</p><div class="d-bars"><div>Problem<i style="width:100%"></i>25</div><div>Prototype<i style="width:100%"></i>25</div><div>Business case<i style="width:80%"></i>20</div><div>Feasibility<i style="width:60%"></i>15</div><div>Communication<i style="width:60%"></i>15</div></div>'];
     },
-    checkin: function () { return ["Check-in stall", "Check-in and opening", "<p>Doors open at 9:00 AM on Day 1. Students check in on the hacker portal, find their team and grab breakfast.</p>" + list([["9:00 AM", "Doors and breakfast"], ["9:30 AM", "Opening ceremony: welcome, rules and how judging works"]]) + "<p>Every check-in is counted, so the participant numbers in your report are exact.</p>"]; },
-    fountain: function () { return ["Fountain square", "Ceremonies", list([["Day 1", "9:30 AM · Opening ceremony"], ["Day 1", "11:00 AM · Track reveal"], ["Day 2", "4:30 PM · Awards"]]) + "<p>Platinum sponsors reveal their tracks and present track prizes here. Gold sponsors present their named prizes.</p>"]; },
+    checkin: function () { return ["Check-in stall", "Check-in and opening", "<p>Check-in opens at 12:00 PM on Friday. Students check in on the hacker portal and find their team.</p>" + list([["12:00 PM", "Check-in opens"], ["5:30 PM", "Opening ceremony: welcome, rules and how judging works"]]) + "<p>Every check-in is counted, so the participant numbers in your report are exact.</p>"]; },
+    fountain: function () { return ["Fountain square", "Ceremonies", list([["Friday", "5:30 PM · Opening ceremony"], ["Friday", "6:00 PM · Case reveal"], ["Saturday", "7:00 PM · Awards"]]) + "<p>Platinum sponsors reveal their tracks and present track prizes here. Gold sponsors present their named prizes.</p>"]; },
     plot: function (b) {
       var t = b.dataset.tier;
       return [t + " plot", "Your company here", "<dl><dt>Tier</dt><dd>" + t + "</dd><dt>Track</dt><dd>" + b.dataset.track + "</dd></dl><p>" + plotText[t] + '</p><a class="pixbtn" href="#packages">See the ' + t + " package</a>"];
@@ -1994,12 +2093,12 @@ a{color:var(--accent)}
     o: ["Open track", "Teams bring their own problem", "Same rubric, same deadline.", "No sponsor brief"]
   };
   var STATES = {
-    1: { show: ["a", "b", "c"], title: "Sponsor A's problem, released Day 1 at 11:00 AM",
+    1: { show: ["a", "b", "c"], title: "Sponsor A's problem, released Friday at 6:00 PM",
       cards: { a: ["Sub-question 1", "The risk angle", "A question inside Sponsor A's problem.", "Set by Sponsor A"], b: ["Sub-question 2", "The client angle", "A question inside Sponsor A's problem.", "Set by Sponsor A"], c: ["Sub-question 3", "The data angle", "A question inside Sponsor A's problem.", "Set by Sponsor A"] },
       sum: ["Sponsor A sets the whole case. We write it with them.", "Two or three sub-questions inside Sponsor A's problem. Teams pick one at the reveal.", "Sponsor A judges the finals."] },
-    2: { show: ["a", "b", "o"], title: "Released to every team, Day 1 at 11:00 AM", cards: {},
+    2: { show: ["a", "b", "o"], title: "Released to every team, Friday at 6:00 PM", cards: {},
       sum: ["We write one case world with both sponsors.", "Two sponsor tracks plus the Open track. Teams pick one at the reveal.", "Each track sends its best team, plus wildcards, to make 4 finalists."] },
-    3: { show: ["a", "b", "c", "o"], title: "Released to every team, Day 1 at 11:00 AM", cards: {},
+    3: { show: ["a", "b", "c", "o"], title: "Released to every team, Friday at 6:00 PM", cards: {},
       sum: ["We write one case world with all three sponsors.", "Three sponsor tracks plus the Open track. Teams pick one at the reveal.", "The top team from each sponsor track plus 1 wildcard make the 4 finalists."] }
   };
   var paths = [0, 1, 2, 3].map(function (i) { return $("#br" + i); });
@@ -2087,25 +2186,28 @@ a{color:var(--accent)}
     });
   });
 
-  /* 24-hour clock */
+  /* 22-hour clock: Friday 6:00 PM to Saturday 4:00 PM */
+  var CLOCK_H = 22, CLOCK_START = 18 * 60;
   var C1 = 2 * Math.PI * 150, C2 = 2 * Math.PI * 168;
   var ringFill = $("#ringFill"), ringNight = $("#ringNight");
   ringFill.setAttribute("stroke-dasharray", C1.toFixed(2));
-  ringNight.setAttribute("stroke-dasharray", (C2 * 13 / 24).toFixed(2) + " " + C2.toFixed(2));
-  ringNight.setAttribute("stroke-dashoffset", (-C2 * 8 / 24).toFixed(2));
-  [[0, 1], [1], [2], [3.5], [5], [7], [21], [22], [24, 1]].forEach(function (m) {
-    var a = m[0] / 24 * 2 * Math.PI, c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  /* overnight: Friday 7:00 PM (hour 1) to Saturday 8:00 AM (hour 14) */
+  ringNight.setAttribute("stroke-dasharray", (C2 * 13 / CLOCK_H).toFixed(2) + " " + C2.toFixed(2));
+  ringNight.setAttribute("stroke-dashoffset", (-C2 * 1 / CLOCK_H).toFixed(2));
+  /* reveal, dinner, breakfast, workshop 2, workshop 3, deadline */
+  [[0, 1], [1], [14], [16], [19], [22, 1]].forEach(function (m) {
+    var a = m[0] / CLOCK_H * 2 * Math.PI, c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
     c.setAttribute("cx", (180 + 150 * Math.cos(a)).toFixed(1)); c.setAttribute("cy", (180 + 150 * Math.sin(a)).toFixed(1));
     c.setAttribute("r", "8"); c.setAttribute("class", "ring-mark" + (m[1] ? " key" : ""));
     $("#ringMarks").appendChild(c);
   });
   function setClock(p) {
     ringFill.setAttribute("stroke-dashoffset", (C1 * (1 - p)).toFixed(2));
-    var h = p * 24, mins = Math.round((11 * 60 + h * 60) / 30) * 30, day = mins >= 1440 ? 2 : 1;
+    var h = p * CLOCK_H, mins = Math.round((CLOCK_START + h * 60) / 30) * 30, day = mins >= 1440 ? "Sat" : "Fri";
     mins = mins % 1440;
     var hh = Math.floor(mins / 60), mm = mins % 60, ap = hh >= 12 ? "PM" : "AM", h12 = hh % 12 || 12;
     $("#clockHour").textContent = Math.round(h) + "h";
-    $("#clockTime").textContent = "Day " + day + " · " + h12 + ":" + (mm < 10 ? "0" : "") + mm + " " + ap;
+    $("#clockTime").textContent = day + " · " + h12 + ":" + (mm < 10 ? "0" : "") + mm + " " + ap;
   }
   setClock(1);
 
@@ -2255,7 +2357,7 @@ a{color:var(--accent)}
         cleanups.push(function () { gsap.set(["#briefPage", "#callouts li"], { clearProps: "all" }); $$("#leaders path").forEach(function (l) { l.style.strokeDasharray = ""; l.style.strokeDashoffset = ""; }); });
       }
 
-      /* 24-hour clock */
+      /* 22-hour clock */
       var ck = { p: 0 };
       setClock(0);
       gsap.to(ck, { p: 1, ease: "none", onUpdate: function () { setClock(ck.p); },
